@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+
+
+@layer base {
+
+
+    .menu-container-st {
+        @apply hidden  lg:flex lg:gap-4 xl:gap-6 ;
+    }
+    .site-header{
+        @apply flex w-full items-center bg-white fixed py-5 justify-between px-5 md:px-10 lg:px-5  lg:justify-between lg:pl-3 lg:pr-7 z-10 xl:justify-evenly shadow-lg;
+    }
+    .logo{
+        @apply w-52 md:w-96 lg:w-56 xl:w-56 md:justify-start;
+       }
+       .menu-container-st  .current_page_item {
+       @apply  lg:border-b-2 lg:border-cyan-400 lg:text-sky-800;
+       }
+
+       .menu-container-st  a {
+        @apply lg:font-openSans lg:divide-x-2 lg:divide-solid lg:divide-cyan-400 lg:px-0.5 lg:text-sm lg:text-sky-900 lg:font-bold lg:hover:text-cyan-500 lg:transition-all lg:duration-500 lg:ease-out uppercase xl:font-black; 
+       }
+       .slide_nav_button{
+        @apply cursor-pointer;
+       }
+       .slide_menu {
+         @apply hidden border border-gray-200 z-10 absolute w-11/12 p-5 mx-0 bg-white rounded-md top-24 md:top-28;
+       }
+       .slide_menu ul {
+        @apply  grid grid-cols-2 gap-3 sm:grid-cols-4;
+       }
+       .buttonMenuMobile{
+        @apply mt-5 w-36 text-center items-center gap-2 md:w-40 bg-white shadow-lg font-Poppins py-3  text-sm  rounded-xl  cursor-pointer border border-gray-100;
+       }
+       .con-sidebar{
+        @apply md:flex md:justify-between;
+       }
+       
+      
+}
+
+    @tailwind utilities;
